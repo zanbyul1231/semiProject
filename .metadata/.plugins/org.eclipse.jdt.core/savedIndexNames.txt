@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Edu\Git_GitHub\stayhub\.metadata\.plugins\org.eclipse.jdt.core
+1620887248.index
+1865797976.index
+4162497033.index
+801970741.index
