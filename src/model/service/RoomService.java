@@ -3,7 +3,6 @@ package model.service;
 import java.util.List;
 
 import model.dto.Room;
-import model.dto.RoomRate;
 import pension.exception.AddException;
 import pension.exception.DeleteException;
 import pension.exception.FindException;
