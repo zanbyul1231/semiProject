@@ -2,11 +2,10 @@ package model.service;
 
 import java.util.List;
 
-import model.dao.AttractionRateDao;
 import model.dto.AttractionRate;
 
 public class AttractionRateServiceImpl implements AttractionRateService {
-    private AttractionRateDao attractionRateDao = new AttractionRateDao();
+    private AttractionRateServiceImpl AttractionRateServiceImpl;
 
     @Override
     public List<AttractionRate> getAllAttractionRates() {
@@ -20,16 +19,16 @@ public class AttractionRateServiceImpl implements AttractionRateService {
 
     @Override
     public void addAttractionRate(AttractionRate rate) {
-        attractionRateDao.saveAttractionRate(rate);
+        AttractionRateServiceImpl.addAttractionRate(rate);
     }
 
     @Override
     public void updateAttractionRate(AttractionRate rate) {
-        attractionRateDao.updateAttractionRate(rate);
+        AttractionRateServiceImpl.updateAttractionRate(rate);
     }
 
     @Override
     public void deleteAttractionRate(int id) {
-        attractionRateDao.deleteAttractionRate(id);
+        AttractionRateServiceImpl.deleteAttractionRate(id);
     }
 }

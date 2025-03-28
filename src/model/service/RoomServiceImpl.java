@@ -18,7 +18,7 @@ public abstract class RoomServiceImpl implements RoomService {
 
 	@Override
 	public void addRoom(Room room) throws AddException {
-		roomDao.insert(room);
+		roomDao.saveRoom(room);
 	}
 
 	@Override
@@ -33,11 +33,11 @@ public abstract class RoomServiceImpl implements RoomService {
 
 	@Override
 	public Room getRoom(int roomNo) throws FindException {
-		return roomDao.selectByNo(roomNo);
+		return roomDao.findRoomById(roomNo);
 	}
 
 	@Override
 	public List<Room> getAllRooms() throws FindException {
-		return roomDao.selectAll();
+		return roomDao.findAllRooms();
 	}
 }

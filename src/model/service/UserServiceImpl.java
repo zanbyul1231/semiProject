@@ -33,11 +33,11 @@ public abstract class UserServiceImpl implements UserService {
 
 	@Override
 	public User getUser(int userNo) throws FindException {
-		return userDao.selectByNo(userNo);
+		return userDao.findUserById(userNo);
 	}
 
 	@Override
 	public List<User> getAllUsers() throws FindException {
-		return userDao.selectAll();
+		return userDao.findAllUsers();
 	}
 }

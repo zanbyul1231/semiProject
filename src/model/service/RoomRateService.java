@@ -9,14 +9,14 @@ public interface RoomRateService {
 	List<RoomRate> getAllRoomRates();
 
 	// 특정 방 요금 정보 조회
-	RoomRate getRoomRateById(int id);
+	RoomRate getRoomRateById();
 
 	// 방 요금 추가
-	void addRoomRate(RoomRate rate);
+	void addRoomRate();
 
 	// 방 요금 수정
-	void updateRoomRate(RoomRate rate);
+	void updateRoomRate();
 
 	// 방 요금 삭제
-	void deleteRoomRate(int id);
+	void deleteRoomRate();
 }

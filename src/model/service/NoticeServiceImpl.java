@@ -18,26 +18,26 @@ public abstract class NoticeServiceImpl implements NoticeService {
 
 	@Override
 	public void addNotice(Notice notice) throws AddException {
-		noticeDao.insert(notice);
+		noticeDao.saveNotice(notice);
 	}
 
 	@Override
 	public void modifyNotice(Notice notice) throws ModifyException {
-		noticeDao.update(notice);
+		noticeDao.updateNotice(notice);
 	}
 
 	@Override
 	public void removeNotice(int noticeNo) throws DeleteException {
-		noticeDao.delete(noticeNo);
+		noticeDao.deleteNotice(noticeNo);
 	}
 
 	@Override
 	public Notice getNotice(int noticeNo) throws FindException {
-		return noticeDao.selectByNo(noticeNo);
+		return noticeDao.findNoticeById(noticeNo);
 	}
 
 	@Override
 	public List<Notice> getAllNotices() throws FindException {
-		return noticeDao.selectAll();
+		return noticeDao.findAllNotices();
 	}
 }
